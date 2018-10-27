@@ -1,0 +1,111 @@
+<div [ngStyle]="mainDivStyleValues">
+  <img [ngStyle]="pictureStyleValues" src="/assets/picture.png"/>
+  <span [ngStyle]="introduceStyleValues" >EBS를 소개합니다.</span>
+  <p [ngStyle]="titleStyleValues"> 평지보다 쉬운 오르막,<br> EBS ㅇㅅㅇ </p>
+  <span [ngStyle]="noticeStyleValues">후들거리는 다리와 이별하세요.</span>
+        <span [ngStyle]="detailExplainTextStyleValues1">서비스 철학</span>          
+        <span [ngStyle]="detailExplainTextStyleValues2">서비스 안내</span>          
+        <span [ngStyle]="detailExplainTextStyleValues3">아르바이트 정책</span>          
+        <div [ngStyle]="detailExplainStyleValues1">
+        핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.
+        </div>
+        
+        <div [ngStyle]="detailExplainStyleValues2">
+       핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.
+       </div>
+        <div [ngStyle]="detailExplainStyleValues3">
+         핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.
+       </div> 
+<span [ngStyle]="usageGuideHeadTitleStyleValues" >이용 안내</span>
+<table [ngStyle]="usageGuideStyleValues">
+  <tr>
+    <td [ngStyle]="numberStyleValues">01</td>
+    <td [ngStyle]="numberStyleValues">02</td> 
+    <td [ngStyle]="numberStyleValues">03</td>
+    <td [ngStyle]="numberStyleValues">04</td>
+    <td [ngStyle]="numberStyleValues">05</td>       
+  </tr>
+  <tr>
+    <td [ngStyle]="usageGuideTitleStyleValues"><span class="half-background">회원가입</span> </td>
+    <td [ngStyle]="usageGuideTitleStyleValues"><span class="half-background">자전거 예약</span></td> 
+    <td [ngStyle]="usageGuideTitleStyleValues"> <span class="half-background">예약 대여소 방문</span></td>
+    <td [ngStyle]="usageGuideTitleStyleValues"><span class="half-background">자전거 대여</span></td>
+    <td [ngStyle]="usageGuideTitleStyleValues"><span class="half-background">아르바이트</span></td> 
+  </tr>
+  <tr>
+    <td [ngStyle]="usageGuideTextStyleValues" >핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.</td>
+    <td [ngStyle]="usageGuideTextStyleValues">핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.</td>
+    <td [ngStyle]="usageGuideTextStyleValues">핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.</td>
+    <td [ngStyle]="usageGuideTextStyleValues">핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.</td>
+    <td [ngStyle]="usageGuideTextStyleValues">핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.</td>
+  </tr>
+</table>
+
+<span [ngStyle]="selectButtonDivTitleStyleValues">자전거 모델</span>
+<div [ngStyle]="selectButtonDivStyleValues">
+<button [hidden]="bicycle==1" (click)="chooseBicycle(1)" [ngStyle]="selectButtonStyleValues">EBS-1</button>
+<button [hidden]="bicycle!=1"  [ngStyle]="chosenButtonStyleValues">EBS-1</button>
+
+<button [hidden]="bicycle==2" (click)="chooseBicycle(2)" [ngStyle]="selectButtonStyleValues">EBS-2</button>
+<button [hidden]="bicycle!=2"  [ngStyle]="chosenButtonStyleValues">EBS-2</button>
+
+<button [hidden]="bicycle==3" (click)="chooseBicycle(3)" [ngStyle]="selectButtonStyleValues">EBS-3</button>
+<button [hidden]="bicycle!=3"  [ngStyle]="chosenButtonStyleValues">EBS-3</button>
+</div>
+
+<img [hidden]="bicycle!=1" [ngStyle]="bicycleImgStyleValues" src="/assets/bicycle-about.png"/>
+<table [hidden]="bicycle!=1" [ngStyle]="bicycleTableStyleValues">
+    <tr>
+        <td [ngStyle]="bicycleLabelStyleValues">용도</td>
+        <td [ngStyle]="bicycleFirstColumn" >근거리 출퇴근<br>가벼운 운동</td>
+        <td [ngStyle]="bicycleLabelStyleValues">구동</td>
+        <td [ngStyle]="bicycleSecondColumn">48V 320W BLDC 모터</td>
+        <td [ngStyle]="bicycleLabelStyleValues">변속</td>
+        <td [ngStyle]="bicycleThirdColumn"><b>앞</b> Shimano M410E<br>
+            <b>뒤</b> Shimano TX35, 총 21단</td>
+    </tr>
+   <tr>
+        <td [ngStyle]="bicycleLabelStyleValues">주행방식</td>
+        <td [ngStyle]="bicycleFirstColumn"> FULL PAS 5단계</td>
+        <td [ngStyle]="bicycleLabelStyleValues">배터리</td>
+        <td [ngStyle]="bicycleSecondColumn">448V 10.4AH<br>
+            고효율 리튬이온배터리</td>
+        <td [ngStyle]="bicycleLabelStyleValues">서스펜션</td>
+        <td [ngStyle]="bicycleThirdColumn">전륜 포크 서스펜션</td>       
+   </tr>
+   <tr>
+        <td [ngStyle]="bicycleLabelStyleValues">주행거리</td>
+        <td [ngStyle]="bicycleFirstColumn">약 60km</td>
+        <td [ngStyle]="bicycleLabelStyleValues">타이어</td>
+        <td [ngStyle]="bicycleSecondColumn">26인치, 4.0 광폭<br>
+            KENDA 타이어</td>
+        <td [ngStyle]="bicycleLabelStyleValues">커넥터</td>
+        <td [ngStyle]="bicycleThirdColumn">IP56 방수 커넥터</td>       
+   </tr>
+</table>
+<div [hidden]="bicycle!=1" [ngStyle]="bicycleExplainUnderTableStyleValues">
+핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다. 핸들 우측에 시마노 7단 변속 레버가 장착되어 변속 능력이 탁월하며, 단 두 개의 버튼으로 간단하게 조작하실 수 있습니다. 7단 기어를 통해 더욱 편안한 경사나 비탈길 주행은 물론 배터리가 방전되었을 때도 효율적인 페달링이 가능합니다.
+</div>
+
+
+<a [ngStyle]="reservationButtonStyleValues" style="text-decoration:none;" routerLink="/book">예약하기</a>
+</div> 
+
+<div [ngStyle]="footerLinkDivStyleValues">
+  <a style="text-decoration:none;" [ngStyle]="footerLinkFirstEachStyleValues" routerLink="/about">서비스 소개</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" routerLink="/book">예약</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" routerLink="/parttime">아르바이트</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" >테마 코드</a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkFirstImgStyleValues" src='/assets/facebook.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/instagram.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/socialLink.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/twitter.png' class='social-link' /></a>
+</div>
+
+<div [ngStyle]="footerDivStyleValues">
+  <img [ngStyle]="ebsBottomStyleValues" src='/assets/ebsBottom.png'/>
+  <img [ngStyle]="designByBottomStyleValues" src='/assets/2018-designed-by-w.png'/> 
+  <!-- 
+   <button [ngStyle]="scrollTopStyleValues" (click)="scrollTop()" >...</button>
+   -->
+</div>
