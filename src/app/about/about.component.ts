@@ -96,7 +96,7 @@ export class AboutComponent implements OnInit {
     left = (373 / 1920) * this.innerWidth;
     top = ((290-99) / 1920) * this.innerWidth;
     let fontsize = (60 / 1920) *  this.innerWidth;
-    width = (571 / 1920) * this.innerWidth;
+    width = ((571 + 30) / 1920) * this.innerWidth; // why safari require additional width?
     this.titleStyleValues = {
         'position': 'absolute',
         'object-fit': 'contain',
@@ -115,7 +115,7 @@ export class AboutComponent implements OnInit {
 
     left = (373 / 1920) * this.innerWidth;
     top = ((254 - 99) / 1920) * this.innerWidth;
-    width = (192 / 1920) * this.innerWidth;
+    width = ((192 + 50 )/ 1920) * this.innerWidth; // why safari require additional width?
     fontsize = (24/ 1920) *  this.innerWidth;
     this.introduceStyleValues= {
         'position': 'absolute',
@@ -136,7 +136,7 @@ export class AboutComponent implements OnInit {
     left = (373 / 1920) * this.innerWidth;
     top = ((502 - 99) / 1920) * this.innerWidth;
     fontsize = (22/ 1920) *  this.innerWidth;
-    width = (378 / 1920) * this.innerWidth;
+    width = ((378 + 50)/ 1920) * this.innerWidth; // why safari require additional width?
 
     this.noticeStyleValues ={
         'position': 'absolute',

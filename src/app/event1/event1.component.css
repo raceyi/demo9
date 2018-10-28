@@ -1,0 +1,52 @@
+/* all direct children of menu and item are laid out in a single row as long as there is enough space */
+.menu,
+.item {
+  display: flex;
+}
+
+/* all menu items can grow except the last one */
+.item:not(:last-child) {
+  flex-grow: 1;
+}
+
+/* a horizontal line is appended to all items if space is available (except the last item) */
+.item:not(:last-child):after {
+  content: '';
+  border-bottom: 1px solid #7984f3;
+  height: 50%;  /* centers line vertically */
+  flex-grow: 1; 
+  margin: 0px;
+}
+
+.chosen.item:not(:last-child):after {
+  content: '';
+  border-bottom: 3px solid #7984f3;
+  height: 50%;  /* centers line vertically */
+  flex-grow: 1; 
+  margin: 0px;
+}
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+}
+.arrow_box:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #88b7d5;
+	border-width: 5px; 
+	margin-left: -5px;
+}
+
+.flexbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

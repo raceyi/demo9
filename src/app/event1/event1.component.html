@@ -1,0 +1,174 @@
+<div [ngStyle]="mainDivStyleValues">
+<span [ngStyle]="titleStyleValues">한강 코스</span>
+<agm-map [latitude]="lat" [longitude]="lng"  [zoom]="zoom" [ngStyle]="mapDivStyleValues">
+  <agm-direction [origin]="origin" [destination]="destination" [travelMode]="travelMode" (onResponse)="onResponse($event)" [renderOptions]="renderOptions" [markerOptions]="markerOptions">
+  </agm-direction>
+</agm-map>
+<input [ngStyle]="inputAddressStyleValues" type="text" placeholder="주소를 검색하세요.">
+
+<div [ngStyle]="course1DivStyleValues">
+<table [ngStyle]="course1StyleValues" style="background-color:#7984f3;">
+    <tr>
+        <td [ngStyle]="courseAlphabet">A</td>
+        <td [ngStyle]="courseName" >한강코스</td>
+        <td [ngStyle]="courseRoute">안양천 ~ 숲길 끝지점</td>
+        <!--
+        <td [ngStyle]="courseButton" ><a [ngStyle]="courseButton" ><img style="height:100%;" src='/assets/arrow-button.png'/></a></td>
+        -->
+    </tr>
+</table>
+<a [ngStyle]="courseButton" ><img style="height:100%;" src='/assets/arrow-button.png'/></a>
+<table [ngStyle]="courseInfo1StyleValues">
+    <tr>
+        <td [ngStyle]="courseInfoLabel">총 소요시간</td>
+        <td [ngStyle]="courseInfoLabel" >거리</td>
+        <td [ngStyle]="courseInfoLabel">비용</td>
+        <td [ngStyle]="courseInfoLabel" >추천 대상</td>
+    </tr>
+    <tr>
+        <td [ngStyle]="courseInfoValue">1시간 30분</td>
+        <td [ngStyle]="courseInfoValue">8km</td>
+        <td [ngStyle]="courseInfoValue" >1,000</td>        
+        <td [ngStyle]="courseInfoValue" >커플 가족 체력부족 라이더</td>
+    </tr>    
+</table>
+<div [ngStyle]="courseDetailDiv">
+   <span [ngStyle]="courseDetailLabel">코스 상세</span>
+   <div class="menu" [ngStyle]="lineDivStyleValues">
+    <div class="item" [style.width]="course1WidthStyleValues1">
+        <button [ngStyle]="buttonPointStyleValues">A</button>
+    </div>
+    <div class="item chosen"   [style.width]="course1WidthStyleValues2">
+        <button [ngStyle]="buttonPointStyleValues">A2</button>
+    </div>   
+    <div class="item" [style.width]="course1WidthStyleValues3">
+        <button [ngStyle]="buttonPointStyleValues">A3</button>
+    </div>      
+    <div class="item" [style.width]="course1WidthStyleValues4">
+        <button [ngStyle]="buttonPointStyleValues">A4</button>
+    </div>     
+    <div class="item" [style.width]="course1WidthStyleValues5">
+        <button [ngStyle]="buttonPointStyleValues">A5</button>
+    </div>     
+    <div class="item">
+        <button [ngStyle]="buttonPointStyleValues">A6</button>
+    </div>     
+   </div>
+   <div [ngStyle]="explainBoxStyleValues" class="flexbox">
+     <div class="arrow_box" [ngStyle]="explainBoxTextStyleValues" >
+     거리 소요시간<br>
+     <b>2km 8min</b>
+     </div>
+   </div>
+   <!-- Table로 만들자 ㅜㅜ -->
+   <div class="menu" [ngStyle]="stationNameDivStyleValues">
+    <div style="display:flex;left:0px;" [ngStyle]="stationFontSize">
+        <p style="flex-grow: 1;">안양천</p>
+    </div>
+    <div [style.left]="course1WidthNameStyleValues1" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+       <p style="flex-grow: 1;">한강</p>
+    </div>   
+    <div [style.left]="course1WidthNameStyleValues2" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+       <p style="flex-grow: 1;">서교밥집</p>
+    </div>      
+    <div [style.left]="course1WidthNameStyleValues3" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+         <p style="flex-grow: 1;">숲길 시작점</p>
+    </div>     
+    <div [style.left]="course1WidthNameStyleValues4"  style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+        <p style="flex-grow: 1;">경의선 숲길</p>
+    </div>     
+    <div  [style.left]="course1WidthNameStyleValues5" style="display:flex;flex-grow: 1;width:100px;" [ngStyle]="stationFontSize" >
+        <p style="flex-grow: 1;">숲길 끝지점</p>
+    </div>     
+   </div>
+</div>
+</div> <!-- end of course1 -->
+
+<div [ngStyle]="course2DivStyleValues">
+<table [ngStyle]="course1StyleValues" style="background-color:#4a90e2;">
+    <tr>
+        <td [ngStyle]="courseAlphabet">A</td>
+        <td [ngStyle]="courseName" >한강코스</td>
+        <td [ngStyle]="courseRoute">안양천 ~ 숲길 끝지점</td>
+        <!--
+        <td [ngStyle]="courseButton" ><a [ngStyle]="courseButton" ><img style="height:100%;" src='/assets/arrow-button.png'/></a></td>
+        -->
+    </tr>
+</table>
+<a [ngStyle]="courseButton" ><img style="height:100%;" src='/assets/arrow-button.png'/></a>
+<table [ngStyle]="courseInfo1StyleValues">
+    <tr>
+        <td [ngStyle]="courseInfoLabel">총 소요시간</td>
+        <td [ngStyle]="courseInfoLabel" >거리</td>
+        <td [ngStyle]="courseInfoLabel">비용</td>
+        <td [ngStyle]="courseInfoLabel" >추천 대상</td>
+    </tr>
+    <tr>
+        <td [ngStyle]="courseInfoValue">1시간 30분</td>
+        <td [ngStyle]="courseInfoValue">8km</td>
+        <td [ngStyle]="courseInfoValue" >1,000</td>        
+        <td [ngStyle]="courseInfoValue" >커플 가족 체력부족 라이더</td>
+    </tr>    
+</table>
+<div [ngStyle]="courseDetailDiv">
+   <span [ngStyle]="courseDetailLabel">코스 상세</span>
+   <div class="menu" [ngStyle]="lineDivStyleValues">
+    <div class="item" [style.width]="course2WidthStyleValues1">
+        <button [ngStyle]="buttonPointStyleValues">A</button>
+    </div>
+    <div class="item chosen"   [style.width]="course2WidthStyleValues2">
+        <button [ngStyle]="buttonPointStyleValues">A2</button>
+    </div>   
+    <div class="item" [style.width]="course2WidthStyleValues3">
+        <button [ngStyle]="buttonPointStyleValues">A3</button>
+    </div>      
+    <div class="item" [style.width]="course2WidthStyleValues4">
+        <button [ngStyle]="buttonPointStyleValues">A4</button>
+    </div>     
+    <div class="item">
+        <button [ngStyle]="buttonPointStyleValues">A5</button>
+    </div>     
+    
+   </div>
+   <!-- Table로 만들자 ㅜㅜ -->
+   <div class="menu" [ngStyle]="stationNameDivStyleValues">
+    <div style="display:flex;left:0px;" [ngStyle]="stationFontSize">
+        <p style="flex-grow: 1;">안양천</p>
+    </div>
+    <div [style.left]="course2WidthNameStyleValues1" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+       <p style="flex-grow: 1;">한강</p>
+    </div>   
+    <div [style.left]="course2WidthNameStyleValues2" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+       <p style="flex-grow: 1;">서교밥집</p>
+    </div>      
+    <div [style.left]="course2WidthNameStyleValues3" style="display:flex;flex-grow: 1; " [ngStyle]="stationFontSize">
+         <p style="flex-grow: 1;">숲길 시작점</p>
+    </div>     
+    <div [style.left]="course2WidthNameStyleValues4"  style="display:flex;flex-grow: 1;width:100px; " [ngStyle]="stationFontSize">
+        <p style="flex-grow: 1;">경의선 숲길</p>
+    </div>     
+   </div>
+</div>
+</div> <!-- end of course2 -->
+
+</div>
+<div [ngStyle]="footerLinkDivStyleValues">
+  <a style="text-decoration:none;" [ngStyle]="footerLinkFirstEachStyleValues" routerLink="/about">서비스 소개</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" routerLink="/book">예약</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" routerLink="/parttime">아르바이트</a>
+  <a style="text-decoration:none;" [ngStyle]="footerLinkEachStyleValues" >테마 코드</a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkFirstImgStyleValues" src='/assets/facebook.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/instagram.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/socialLink.png' class='social-link' /></a>
+  <a style="text-decoration:none;"><img [ngStyle]="footerLinkImgStyleValues" src='/assets/twitter.png' class='social-link' /></a>
+</div>
+
+<div [ngStyle]="footerDivStyleValues">
+  <img [ngStyle]="ebsBottomStyleValues" src='/assets/ebsBottom.png'/>
+  <img [ngStyle]="designByBottomStyleValues" src='/assets/2018-designed-by-w.png'/> 
+  <!-- 
+   <button [ngStyle]="scrollTopStyleValues" (click)="scrollTop()" >...</button>
+   -->
+</div>
+
+
