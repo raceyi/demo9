@@ -59,6 +59,9 @@ export class BookComponent implements OnInit {
   paymentCellStyle:any;
 
   paymentButtonStyle:any;
+  changeButtonStyle:any;
+  numCountStyleInTable:any;
+
   //////////////////////////////////
     reservationButtonStyleValues:any;
     parttimeButtonStyleValues:any;
@@ -612,7 +615,41 @@ export class BookComponent implements OnInit {
         'border':'0px',
         'background-color':'#00227e'
     };
-////////////////////////////////////////
+
+   fontsize= (12/ 1920) * this.innerWidth;
+   this.numCountStyleInTable = {
+        'font-size': fontsize + 'px',
+        'object-fit': 'contain',
+        'font-family': 'Campton-DEMO',
+        'font-weight': 'bold',
+        'font-style': 'normal',
+        'font-stretch': 'normal',
+        'line-height': 'normal',
+        'letter-spacing': 'normal',
+         'text-align': 'center',
+        'color': '#00227e'
+    };
+
+    width=((39) / 1920) * this.innerWidth;
+    height=((18) / 1920) * this.innerWidth;
+    this.changeButtonStyle = {
+       'width': width + 'px',
+       'height': height +'px',
+       'background-color':'#00227e',
+        'font-size': fontsize + 'px',
+        'font-family': 'NotoSansCJKkr',
+        'font-weight': 'bold',
+        'font-style': 'normal',
+        'font-stretch': 'normal',
+        'line-height': 'normal',
+        'letter-spacing': 'normal',
+         'text-align': 'center',
+        'color': '#ffffff',
+        'padding':'0px',
+        'margin':'0px',
+        'border':'0px'
+    };
+
 /////////////////////////////////////////////////////////
     left =  ((0) ) * this.innerWidth;
     top =  ((2253-98 ) / 1920) * this.innerWidth;

@@ -52,7 +52,7 @@
                 1
               </div>
               <button [ngStyle]="decLabel" style="background-color:#00227e;color:white;border:0px;padding:0px;margin:0px;">
-                &#x25BC;
+                 &#x25BE;
               </button>
               <button [ngStyle]="addCart" style="background-color:#fed24b;color:white;border:0px;padding:0px;margin:0px;">
                 +
@@ -81,7 +81,7 @@
                 1
               </div>
               <button [ngStyle]="decLabel" style="background-color:#00227e;color:white;border:0px;padding:0px;margin:0px;">
-                &#x25BC;
+                 &#x25BE;
               </button>
               <button [ngStyle]="addCart" style="background-color:#fed24b;color:white;border:0px;padding:0px;margin:0px;">
                 +
@@ -110,7 +110,7 @@
                 1
               </div>
               <button [ngStyle]="decLabel" style="background-color:#00227e;color:white;border:0px;padding:0px;margin:0px;">
-                &#x25BC;
+                &#x25BE; <!-- &#x25BC;-->
               </button>
               <button [ngStyle]="addCart" style="background-color:#fed24b;color:white;border:0px;padding:0px;margin:0px;">
                 +
@@ -197,7 +197,21 @@
                <p [ngStyle]="stationNameFontStyle">제주관광공사 대여소</p>
                <p [ngStyle]="addressStyle">제주특별자치도 제주시 이도2동 광양9길 10</p>
             </td>
-            <td [ngStyle]="tableBoldBlueStyle">2대</td>
+            <td [ngStyle]="tableBoldBlueStyle">
+
+            <div class="box">
+              <button  [ngStyle]="numCountStyleInTable" style="background-color:white;color:#00227e;border:0px;padding:0px;margin:0px;">
+               &#x25B4;
+              </button>
+              <div [ngStyle]="numCountStyleInTable" style="color:#00227e;">
+                2대
+              </div>
+              <button [ngStyle]="numCountStyleInTable" style="background-color:white;color:#00227e;border:0px;padding:0px;margin:0px;">
+                 &#x25BE;
+              </button>
+           </div>
+           <button [ngStyle]="changeButtonStyle"> 변경</button>
+            </td>
             <td [ngStyle]="tableBoldBlueStyle">2시간</td>
             <td [ngStyle]="tableBoldBlueStyle">1,500원/시간</td>            
         </tr>
@@ -254,12 +268,14 @@
                   <td></td>
                   <td>아르바이트</td>
                   <td style="background-color:#fed24b;"></td>
+                  <td style="background-color:#fed24b;"></td>
                   <td [ngStyle]="paymentCellStyle" style="background-color:#fed24b;">결제금액</td>          
               </tr>      
               <tr>
                   <td [ngStyle]="tableBoldBlueStyle">3,000원</td>
                   <td [ngStyle]="tableBoldBlueStyle">+</td>
                   <td [ngStyle]="tableBoldBlueStyle">-1,000원</td>
+                  <td style="background-color:#fed24b;"></td>
                   <td [ngStyle]="tableBoldBlueStyle" style="background-color:#fed24b;"> = </td>
                   <td [ngStyle]="tableBoldBlueStyle" style="background-color:#fed24b;">2,000원</td>
               </tr>      

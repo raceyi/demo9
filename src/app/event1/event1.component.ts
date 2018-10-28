@@ -77,6 +77,7 @@ export class Event1Component implements OnInit {
   stationFontSize:any;
 
   stationNameStyleValues:any;
+
 ////////////////////////////////
   footerLinkDivStyleValues: any;
   footerDivStyleValues: any;
@@ -565,7 +566,8 @@ export class Event1Component implements OnInit {
         'line-height': 'normal',
         'letter-spacing': 'normal',
         'color': '#000000'
-        }
+    }
+
 /////////////////////////////////////////////////////////
     let marginright;
 
